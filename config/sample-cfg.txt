@@ -1,0 +1,12 @@
+[INFO]
+name=my name
+dob=18-1-1987
+passport_number=ACBD
+passport_expiry=20-4-2044
+nationality=SINGAPORE
+sex=m
+email=test@gmail.com
+country_code=+65
+mobile=+65 93834567
+mode=l
+last_embarkation=SINGAPORE
