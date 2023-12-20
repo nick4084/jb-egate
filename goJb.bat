@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 color 0A
-set "targetDirectory=C:\Users\nicholas\Desktop\Projects\Jb-egate\config" 
+set "targetDirectory=C:/Users/nick4/Projects/jb-egate/config/" 
 echo "###############################################"
 echo "#     JB E-GATE AUTO FILLER                   #"
 echo "###############################################"
@@ -37,7 +37,7 @@ for %%a in (!people!) do (
     for %%f in ("%targetDirectory%\*.*") do (
         if !i!==%%a (
             echo submitting %%~nf going jb from %departureDate% to %returnDate%
-            py -3 main.py %%~nf %departureDate% %returnDate%
+            py main.py %%~nf %departureDate% %returnDate%
         )
         set /a i+=1
     )

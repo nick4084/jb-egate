@@ -13,8 +13,8 @@ def openChrome(page):
     new = 2 # open in a new tab, if possible
 
     # open a public URL, in this case, the webbrowser docs
-    chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
-    # "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+    # "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
     webbrowser.get(chrome_path).open(page,new=new)
 
 
@@ -110,6 +110,7 @@ def triggerPaste(text=""):
 def triggerkeyIn(str):
     for i in range(len(str)):
         pyautogui.hotkey(str[i])
+        sleepForMs(200)
 
 def ctrlA():
     pyautogui.hotkey("ctrl", "a")
